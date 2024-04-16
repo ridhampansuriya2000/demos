@@ -1,0 +1,41 @@
+/* listBlock.module.css */
+.listBlock {
+    width: 350px;
+    height: 95%;
+    margin: 15px;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: rgb(223, 223, 223);
+    border: 1px;
+    border-radius: 15px;
+}
+
+.blockHead {
+    height: 35px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listName {
+    margin: 10px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+.listContent {
+    min-height: calc(100% - 60px);
+    max-height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}

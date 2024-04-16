@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Template</title>
+    <style>
+        /* Add your CSS styles for the PDF content here */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Add header content here -->
+    <h1 style="background-color: blue">PDF Header</h1>
+</header>
+<main>
+    <!-- Add chart and table content here -->
+    <div id="chart">
+        <!-- Insert your chart here -->
+    </div>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <!-- Add footer content here -->
+    <p>Page {{pageNumber}}</p>
+</footer>
+</body>
+</html>

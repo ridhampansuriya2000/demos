@@ -1,0 +1,63 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Poppins, sans-serif" />
+    </mj-attributes>
+    <mj-style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      hr {
+        background: linear-gradient(90deg, #005DFF 0%, #00A3FF 44.27%, #21DDFF 100%);
+        width: 100%;
+        height: 4px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      p {
+        margin: 5px 0;
+        font-weight: 700;
+      }
+
+      .chart-wrapper {
+        padding: 40px;
+        background: #e3e3e3;
+        border-radius: 20px;
+        margin-bottom: 50px;
+      }
+
+      canvas {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-container>
+        <div class="header">
+          <img src="https://images.app.goo.gl/XxCsWg2LPiXuUsEt8" alt="Logo" />
+          <p>123 Main Street, Dover, NH 03820-4667</p>
+        </div>
+        <hr />
+        <div class="chart-wrapper bg-warning">
+          <div class="dummy-div"></div>
+        </div>
+        <div class="chart-wrapper">
+          <mj-raw>
+            <canvas id="myChart" width="400" height="300"></canvas>
+          </mj-raw>
+        </div>
+        <hr />
+        <div class="footer">
+          <p style="color: #1463FF">Report Genereted on September 26, 2023</p>
+          <p>RealAssist Property Report | Page 1 of 25</p>
+        </div>
+      </mj-container>
+    </mj-section>
+  </mj-body>
+</mjml>

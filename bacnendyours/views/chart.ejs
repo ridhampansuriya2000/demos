@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Example</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <style>
+        #myChart{
+            background: black;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+Hobbies of <%=data.name%> are:<br />
+
+<ul>
+    <% data.forEach((item)=>{%>
+    <li style="height: 20px; width:20px; background-color: aqua">
+        <%=item%>
+    </li>
+    <%});%>
+</ul>
+<div id="myChart" width="400" height="200"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Chart creation code here
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: '<%= chartType %>',
+            data: {
+                labels: <%= JSON.stringify(labels) %>,
+                datasets: [{
+                    label: '<%= chartLabel %>',
+                    data: <%= JSON.stringify(data) %>,
+                    backgroundColor: '<%= backgroundColor %>',
+                    borderColor: '<%= borderColor %>',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

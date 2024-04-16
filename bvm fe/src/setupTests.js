@@ -1,0 +1,1 @@
+import '@testing-library/jest-dom'; // Import and extend expect with @testing-library/jest-dom

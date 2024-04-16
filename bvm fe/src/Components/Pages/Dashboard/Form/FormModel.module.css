@@ -1,0 +1,35 @@
+.formContentText{
+    styleName: subtle;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fieldBox{
+    margin-bottom: 15px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fieldBox label{
+    font-weight: 700;
+}
+
+.radioGroupBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.RadioGroup{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

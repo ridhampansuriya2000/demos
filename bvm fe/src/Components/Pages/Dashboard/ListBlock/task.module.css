@@ -1,0 +1,119 @@
+.task {
+    min-width: 300px;
+    min-height: 120px;
+    background-color: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 7px;
+    padding: 17px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 4px 4px 0px #AEAEAE40;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task:hover {
+    cursor: pointer;
+}
+
+.t_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t_priority {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+}
+
+.t_done {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #8ad8a8;
+    width: 60px;
+    border: 1px #8ad8a8 solid;
+    border-radius: 30px;
+    text-align: center;
+    display: none;
+}
+
+.t_priority.Low {
+    color: #16A34A;
+    background-color: #F0FDF4;
+}
+
+.t_priority.Normal {
+    background-color: rgb(127, 175, 151);
+}
+
+.t_priority.Mid {
+    color: #CA8A04;
+    background-color: #FEFCE8;
+}
+
+.t_priority.High {
+    color: #DC2626;
+    background-color: #FEF2F2;
+}
+
+.t_priority.Critical {
+    background-color: rgb(193, 87, 197);
+}
+
+.t_content {
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 8px;
+}
+
+.t_contentText{
+    text-align: start;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    /*text-align: left;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.t_content_text_date{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.userIconWraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header {
+    border: 1px #fff solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: rgb(255, 255, 255);
+    background-size: contain;
+}
