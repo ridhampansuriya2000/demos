@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0da518fe-bdef-49df-9e6a-969ff83c208e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/_components/Dashboard/Dsahbaord.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/_components/Dashboard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/httpAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo/Demo1/backend" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo/Demo1/backend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NodeJs-PDF-Task-main" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs-PDF-Task-main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chart-demo" beforeDir="false" afterPath="$PROJECT_DIR$/../chart-demo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../git-reating" beforeDir="false" afterPath="$PROJECT_DIR$/../git-reating" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node-mongo-signup-API/node-mongo-signup-verification-api-master-master" beforeDir="false" afterPath="$PROJECT_DIR$/../node-mongo-signup-API/node-mongo-signup-verification-api-master-master" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,13 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2fBDlmXd8wiDZtg2CBLRyZcTuaa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -55,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713265730716</updated>
       <workItem from="1713265734199" duration="5013000" />
+      <workItem from="1713271540496" duration="892000" />
     </task>
     <servers />
   </component>
@@ -66,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
