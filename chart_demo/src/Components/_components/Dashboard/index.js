@@ -12,8 +12,8 @@ const Dashboard = () => {
             const yDataResponse = await fetchData({ endPoint: 'o5zMs5/data' });
             const xDataResponse = await fetchData({ endPoint: 'gDa8uC/data' });
 
-            setXData(Object.values(xDataResponse || {}).slice(0, 50));
-            setYData(Object.values(yDataResponse || {}).slice(0, 50));
+            setXData(Object.values(xDataResponse || {}));
+            setYData(Object.values(yDataResponse || {}));
         };
 
         fetchDataAsync();
@@ -24,7 +24,7 @@ const Dashboard = () => {
             label: `${item.Label}-${yData?.find(elm => elm?.id == item?.id)?.Label || ' '}`,
             y: parseFloat(yData?.find(elm => elm?.id == item?.id)?.RandomNumber || 0),
             x: parseFloat(item.RandomNumber),
-        }))
+        }))?.slice(0, 50)
     },[xData,yData]);
 
     return (
