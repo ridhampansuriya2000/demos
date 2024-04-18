@@ -6,3 +6,16 @@
     align-content: center;
     gap: 20px;
 }
+
+.customTooltip{
+    border: 1px solid darkgray;
+    background: white;
+    padding: 5px;
+    border-radius: 4px;
+    /*color: white;*/
+}
+
+.customTooltip > .intro{
+    font-weight: bolder;
+    color: #8884d8;
+}
