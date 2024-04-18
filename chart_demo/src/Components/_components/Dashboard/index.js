@@ -39,7 +39,7 @@ const Dashboard = () => {
         //     y: parseFloat(yData?.find(elm => elm?.id == item?.id)?.RandomNumber || 0),
         //     x: parseFloat(item.RandomNumber),
         // }))?.slice(0, 50)
-        const newArr = xData?.sort((a,b)=> parseInt(a?.id) - parseInt(b?.id))
+        const newArr = xData?.sort((a,b)=> parseInt(a?.RandomNumber) - parseInt(b?.RandomNumber));
         return newArr.map((item, index) => ({
             label: convertAndFix(item.RandomNumber),
             y: parseFloat(item.RandomNumber),
