@@ -20,6 +20,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 const Dashboard = () => {
     const [xData, setXData] = useState([]);
     const [yData, setYData] = useState([]);
+    const intervals = [];
 
     useEffect(() => {
         const fetchDataAsync = async () => {
@@ -47,36 +48,41 @@ const Dashboard = () => {
         })).slice(0, 50);
     },[xData,yData]);
 
+    const maxX = React.useMemo(()=>Math.max(...chartData.map(data => data.y)),[chartData]);
+    for(let i = 0; i< maxX+25; i += 25){
+        intervals.push(i);
+    }
+
     return (
         <div className={styles.mainContainer}>
             <h2>Line Chart</h2>
             <LineChart width={900} height={500} data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="label" interval={1} angle={-45} textAnchor="end" />
+                <XAxis dataKey="label" ticks={intervals} interval={0} angle={-45} textAnchor="end" type="number" domain={[intervals[0], intervals[intervals?.length -1]]} />
                 <YAxis />
                 <Tooltip content={<CustomTooltip />} />
                 <Legend />
                 <Line dataKey="x" stroke="#82ca9d" />
             </LineChart>
 
-            <h2>Bar Chart</h2>
-            <BarChart width={900} height={500} data={chartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="label" interval={1} angle={-45} textAnchor="end"  />
-                <YAxis />
-                <Tooltip content={<CustomTooltip />} />
-                <Legend />
-                <Bar dataKey="x" fill="#82ca9d" />
-            </BarChart>
+            {/*<h2>Bar Chart</h2>*/}
+            {/*<BarChart width={900} height={500} data={chartData}>*/}
+            {/*    <CartesianGrid strokeDasharray="3 3" />*/}
+            {/*    <XAxis dataKey="label" interval={0} angle={-45} textAnchor="end"/>*/}
+            {/*    <YAxis />*/}
+            {/*    <Tooltip content={<CustomTooltip />} />*/}
+            {/*    <Legend />*/}
+            {/*    <Bar dataKey="x" fill="#82ca9d" />*/}
+            {/*</BarChart>*/}
 
-            <h2>Radar Chart</h2>
-            <RadarChart width={1400} height={700} data={chartData}>
-                <PolarGrid />
-                <PolarAngleAxis dataKey="label" interval={1} angle={-45} textAnchor="end"  />
-                <PolarRadiusAxis angle={30} />
-                <Tooltip content={<CustomTooltip />} />
-                <Radar name="X" dataKey="x" fill="#82ca9d" fillOpacity={0.6} />
-            </RadarChart>
+            {/*<h2>Radar Chart</h2>*/}
+            {/*<RadarChart width={1400} height={700} data={chartData}>*/}
+            {/*    <PolarGrid />*/}
+            {/*    <PolarAngleAxis dataKey="label" interval={1} angle={-45} textAnchor="end"  />*/}
+            {/*    <PolarRadiusAxis angle={30} />*/}
+            {/*    <Tooltip content={<CustomTooltip />} />*/}
+            {/*    <Radar name="X" dataKey="x" fill="#82ca9d" fillOpacity={0.6} />*/}
+            {/*</RadarChart>*/}
         </div>
     );
 };
